@@ -351,6 +351,7 @@ a:hover {
 	position: relative;
 	top: 0;
 	width: 5.35em;
+	color: white;
 }
 
 .wrapper header nav li:nth-child(1) {
@@ -423,15 +424,15 @@ a:hover {
 	animation-delay: 4.75s;
 }
 
-.wrapper header nav li.linkedin {
+.wrapper header nav li.linkedin:hover {
 	color: #0077b5;
 }
 
-.wrapper header nav li.github {
+.wrapper header nav li.github:hover {
 	color: black;
 }
 
-.wrapper header nav li.twitter {
+.wrapper header nav li.twitter:hover {
 	color: #55acee;
 }
 
@@ -463,10 +464,10 @@ a:hover {
 	font-size: 1.1em;
 }
 
-.wrapper header nav a:hover:before {
+/*.wrapper header nav a:hover:before {
 	background-color: rgba(255, 255, 255, 0.175);
 	color: #fff;
-}
+}*/
 
 .wrapper header nav a:active {
 	font-size: 0.95em;
