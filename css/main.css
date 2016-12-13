@@ -24,32 +24,16 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 	overflow: hidden;
+	line-height: 1;
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 
-body {
-	line-height: 1;
-}
-
-ol, ul {
+ul {
 	list-style: none;
-}
-
-blockquote, q {
-	quotes: none;
-}
-
-blockquote:before, blockquote:after, q:before, q:after {
-	content: '';
-	content: none;
-}
-
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+	padding-left: 0;
 }
 
 *, *:before, *:after {
@@ -74,10 +58,6 @@ a {
 	color: inherit;
 	outline: 0;
 	text-decoration: none;
-}
-
-a:hover {
-	border-color: transparent;
 }
 
 .icon {
@@ -116,10 +96,10 @@ a:hover {
 }
 
 .wrapper {
-	-moz-animation: wrapper 3s forwards;
-	-webkit-animation: wrapper 3s forwards;
-	-ms-animation: wrapper 3s forwards;
-	animation: wrapper 3s forwards;
+	-moz-animation: wrapper 1s forwards;
+	-webkit-animation: wrapper 1s forwards;
+	-ms-animation: wrapper 1s forwards;
+	animation: wrapper 1s forwards;
 	height: 100%;
 	left: 0;
 	opacity: 0;
@@ -291,10 +271,10 @@ a:hover {
 }
 
 .wrapper header {
-	-moz-animation: header 1s 2.25s forwards;
-	-webkit-animation: header 1s 2.25s forwards;
-	-ms-animation: header 1s 2.25s forwards;
-	animation: header 1s 2.25s forwards;
+	-moz-animation: header 1s .75s forwards;
+	-webkit-animation: header 1s .75s forwards;
+	-ms-animation: header 1s .75s forwards;
+	animation: header 1s .75s forwards;
 	-moz-backface-visibility: hidden;
 	-webkit-backface-visibility: hidden;
 	-ms-backface-visibility: hidden;
@@ -319,11 +299,12 @@ a:hover {
     font-weight: 300;
     line-height: 1em;
     color: white;
+    margin-bottom: 0.4em;
 }
 
 .wrapper header p {
     font-size: 1.5em;
-    margin: 0.75em 0 0.25em 0;
+    margin: 0.25em 0 0.25em 0;
     color: white;
 }
 
@@ -345,95 +326,58 @@ a:hover {
 	-ms-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
 	display: inline-block;
-	height: 5.35em;
-	line-height: 5.885em;
+	height: 4em;
+	line-height: 5.5em;
 	opacity: 0;
 	position: relative;
 	top: 0;
-	width: 5.35em;
+	width: 6em;
 	color: white;
 }
 
 .wrapper header nav li:nth-child(1) {
+	-moz-animation-delay: 2s;
+	-webkit-animation-delay: 2s;
+	-ms-animation-delay: 2s;
+	animation-delay: 2s;
+}
+
+.wrapper header nav li:nth-child(2) {
+	-moz-animation-delay: 2.25s;
+	-webkit-animation-delay: 2.25s;
+	-ms-animation-delay: 2.25s;
+	animation-delay: 2.25s;
+}
+
+.wrapper header nav li:nth-child(3) {
 	-moz-animation-delay: 2.5s;
 	-webkit-animation-delay: 2.5s;
 	-ms-animation-delay: 2.5s;
 	animation-delay: 2.5s;
 }
 
-.wrapper header nav li:nth-child(2) {
-	-moz-animation-delay: 2.75s;
-	-webkit-animation-delay: 2.75s;
-	-ms-animation-delay: 2.75s;
-	animation-delay: 2.75s;
-}
-
-.wrapper header nav li:nth-child(3) {
-	-moz-animation-delay: 3s;
-	-webkit-animation-delay: 3s;
-	-ms-animation-delay: 3s;
-	animation-delay: 3s;
-}
-
-.wrapper header nav li:nth-child(4) {
-	-moz-animation-delay: 3.25s;
-	-webkit-animation-delay: 3.25s;
-	-ms-animation-delay: 3.25s;
-	animation-delay: 3.25s;
-}
-
-.wrapper header nav li:nth-child(5) {
-	-moz-animation-delay: 3.5s;
-	-webkit-animation-delay: 3.5s;
-	-ms-animation-delay: 3.5s;
-	animation-delay: 3.5s;
-}
-
-.wrapper header nav li:nth-child(6) {
-	-moz-animation-delay: 3.75s;
-	-webkit-animation-delay: 3.75s;
-	-ms-animation-delay: 3.75s;
-	animation-delay: 3.75s;
-}
-
-.wrapper header nav li:nth-child(7) {
-	-moz-animation-delay: 4s;
-	-webkit-animation-delay: 4s;
-	-ms-animation-delay: 4s;
-	animation-delay: 4s;
-}
-
-.wrapper header nav li:nth-child(8) {
-	-moz-animation-delay: 4.25s;
-	-webkit-animation-delay: 4.25s;
-	-ms-animation-delay: 4.25s;
-	animation-delay: 4.25s;
-}
-
-.wrapper header nav li:nth-child(9) {
-	-moz-animation-delay: 4.5s;
-	-webkit-animation-delay: 4.5s;
-	-ms-animation-delay: 4.5s;
-	animation-delay: 4.5s;
-}
-
-.wrapper header nav li:nth-child(10) {
-	-moz-animation-delay: 4.75s;
-	-webkit-animation-delay: 4.75s;
-	-ms-animation-delay: 4.75s;
-	animation-delay: 4.75s;
-}
-
 .wrapper header nav li.linkedin:hover {
 	color: #0077b5;
+}
+
+.wrapper header nav li.linkedin:hover a:before {
+	border-color: #0077b5;
 }
 
 .wrapper header nav li.github:hover {
 	color: black;
 }
 
+.wrapper header nav li.github:hover a:before {
+	border-color: black;
+}
+
 .wrapper header nav li.twitter:hover {
 	color: #55acee;
+}
+
+.wrapper header nav li.twitter:hover a:before {
+	border-color: #55acee;
 }
 
 .wrapper header nav a {
@@ -444,10 +388,10 @@ a:hover {
 }
 
 .wrapper header nav a:before {
-	-moz-transition: all 0.2s ease-in-out;
-	-webkit-transition: all 0.2s ease-in-out;
-	-ms-transition: all 0.2s ease-in-out;
-	transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.25s ease-in-out;
+	-webkit-transition: all 0.25s ease-in-out;
+	-ms-transition: all 0.25s ease-in-out;
+	transition: all 0.25s ease-in-out;
 	border-radius: 100%;
 	border: solid 1px #fff;
 	display: block;
@@ -464,16 +408,6 @@ a:hover {
 	font-size: 1.1em;
 }
 
-/*.wrapper header nav a:hover:before {
-	background-color: rgba(255, 255, 255, 0.175);
-	color: #fff;
-}*/
-
-.wrapper header nav a:active {
-	font-size: 0.95em;
-	background: none;
-}
-
 .wrapper header nav a:active:before {
 	background-color: rgba(255, 255, 255, 0.35);
 	color: #fff;
@@ -483,15 +417,38 @@ a:hover {
 	display: none;
 }
 
-/* Footer */
-
 .wrapper footer {
+	-moz-animation: footer-anim 0.5s 3s ease-in-out forwards;
+	-webkit-animation: footer-anim 0.5s 3s ease-in-out forwards;
+	-ms-animation: footer-anim 0.5s 3s ease-in-out forwards;
+	animation: footer-anim 0.5s 3s ease-in-out forwards;
     bottom: 0;
     cursor: default;
     position: absolute;
     text-align: center;
     width: 100%;
     margin-bottom: 1em;
+    opacity: 0;
+}
+
+@-moz-keyframes footer-anim {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+@-webkit-keyframes footer-anim {
+	00% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+@-ms-keyframes footer-anim {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+@keyframes footer-anim {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
 }
 
 .footer .content {
