@@ -302,7 +302,7 @@ a {
     margin-bottom: 0.4em;
 }
 
-.wrapper header p {
+.wrapper header p, .wrapper header .typed-description {
     font-size: 1.5em;
     margin: 0.25em 0 0.25em 0;
     color: white;
@@ -356,7 +356,7 @@ a {
 	animation-delay: 2.5s;
 }
 
-.wrapper header nav li.linkedin:hover {
+.wrapper header nav li.linkedin:hover, .wrapper header nav .linkedin a:active:before {
 	color: #0077b5;
 }
 
@@ -364,7 +364,7 @@ a {
 	border-color: #0077b5;
 }
 
-.wrapper header nav li.github:hover {
+.wrapper header nav li.github:hover, .wrapper header nav .github a:active:before {
 	color: black;
 }
 
@@ -372,7 +372,7 @@ a {
 	border-color: black;
 }
 
-.wrapper header nav li.twitter:hover {
+.wrapper header nav li.twitter:hover, .wrapper header nav .twitter a:active:before {
 	color: #55acee;
 }
 
@@ -410,7 +410,6 @@ a {
 
 .wrapper header nav a:active:before {
 	background-color: rgba(255, 255, 255, 0.35);
-	color: #fff;
 }
 
 .wrapper header nav a span {
@@ -454,4 +453,32 @@ a {
 .footer .content {
 	color: white;
     font-size: 1em;
+}
+
+.typed-cursor {
+    opacity: 1;
+    color: white;
+    font-size: 1.5em;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+    line-height: 1.5em;
+}
+
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
 }
